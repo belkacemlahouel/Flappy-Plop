@@ -1,6 +1,29 @@
 fileFormatVersion: 2
 guid: 3d1fd07cfa0116645ac627b8f96db6bf
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: clony_bird_sprites_0
+    21300002: clony_bird_sprites_1
+    21300004: clony_bird_sprites_2
+    21300006: clony_bird_sprites_7
+    21300008: clony_bird_sprites_12
+    21300010: clony_bird_sprites_13
+    21300012: clony_bird_sprites_14
+    21300014: clony_bird_sprites_15
+    21300016: clony_bird_sprites_18
+    21300018: clony_bird_sprites_19
+    21300020: clony_bird_sprites_20
+    21300022: clony_bird_sprites_21
+    21300024: clony_bird_sprites_22
+    21300026: clony_bird_sprites_23
+    21300028: clony_bird_sprites_24
+    21300030: clony_bird_sprites_25
+    21300032: clony_bird_sprites_26
+    21300034: clony_bird_sprites_27
+    21300036: clony_bird_sprites_28
+    21300038: clony_bird_sprites_29
+    21300040: clony_bird_sprites_30
+    21300042: clony_bird_sprites_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -14,11 +37,14 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
   maxTextureSize: 1024
@@ -29,12 +55,15 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -43,6 +72,7 @@ TextureImporter:
     maxTextureSize: 1024
     textureFormat: -2
     compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     sprites:
     - name: clony_bird_sprites_0
@@ -53,7 +83,13 @@ TextureImporter:
         width: 144
         height: 256
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -72, y: 128}
+        - {x: -72, y: -128}
+        - {x: 72, y: -128}
+        - {x: 72, y: 128}
     - name: clony_bird_sprites_1
       rect:
         serializedVersion: 2
@@ -62,7 +98,13 @@ TextureImporter:
         width: 154
         height: 56
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -77, y: 28}
+        - {x: -77, y: -26}
+        - {x: 77, y: -26}
+        - {x: 77, y: 28}
     - name: clony_bird_sprites_2
       rect:
         serializedVersion: 2
@@ -71,7 +113,9 @@ TextureImporter:
         width: 110
         height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_7
       rect:
         serializedVersion: 2
@@ -80,7 +124,9 @@ TextureImporter:
         width: 136
         height: 16
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_12
       rect:
         serializedVersion: 2
@@ -89,7 +135,9 @@ TextureImporter:
         width: 17
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_13
       rect:
         serializedVersion: 2
@@ -98,7 +146,9 @@ TextureImporter:
         width: 26
         height: 135
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_14
       rect:
         serializedVersion: 2
@@ -107,7 +157,9 @@ TextureImporter:
         width: 26
         height: 121
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_15
       rect:
         serializedVersion: 2
@@ -116,7 +168,9 @@ TextureImporter:
         width: 106
         height: 15
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_18
       rect:
         serializedVersion: 2
@@ -125,7 +179,9 @@ TextureImporter:
         width: 17
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_19
       rect:
         serializedVersion: 2
@@ -134,7 +190,9 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_20
       rect:
         serializedVersion: 2
@@ -143,7 +201,9 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_21
       rect:
         serializedVersion: 2
@@ -152,7 +212,9 @@ TextureImporter:
         width: 10
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_22
       rect:
         serializedVersion: 2
@@ -161,7 +223,9 @@ TextureImporter:
         width: 10
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_23
       rect:
         serializedVersion: 2
@@ -170,7 +234,9 @@ TextureImporter:
         width: 10
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_24
       rect:
         serializedVersion: 2
@@ -179,7 +245,9 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_25
       rect:
         serializedVersion: 2
@@ -188,7 +256,9 @@ TextureImporter:
         width: 9
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_26
       rect:
         serializedVersion: 2
@@ -197,7 +267,9 @@ TextureImporter:
         width: 10
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_27
       rect:
         serializedVersion: 2
@@ -206,7 +278,9 @@ TextureImporter:
         width: 10
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_28
       rect:
         serializedVersion: 2
@@ -215,7 +289,9 @@ TextureImporter:
         width: 10
         height: 11
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_29
       rect:
         serializedVersion: 2
@@ -224,7 +300,9 @@ TextureImporter:
         width: 17
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_30
       rect:
         serializedVersion: 2
@@ -233,7 +311,9 @@ TextureImporter:
         width: 17
         height: 12
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     - name: clony_bird_sprites_21
       rect:
         serializedVersion: 2
@@ -242,6 +322,24 @@ TextureImporter:
         width: 123
         height: 59
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48.5, y: 29.5}
+        - {x: -50.5, y: 26.5}
+        - {x: -50.5, y: -29.5}
+        - {x: 50.5, y: -29.5}
+        - {x: 53.5, y: -14.5}
+        - {x: 53.5, y: 23.5}
+        - {x: 11.5, y: 29.5}
+      - - {x: -61.5, y: -25.5}
+        - {x: -60.5, y: -26.5}
+        - {x: -57.5, y: -24.5}
+        - {x: -57.5, y: 23.5}
+        - {x: -59.5, y: 26.5}
+        - {x: -61.5, y: 25.5}
+    outline: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

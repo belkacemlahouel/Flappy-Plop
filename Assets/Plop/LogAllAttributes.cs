@@ -14,11 +14,14 @@ public class LogAllAttributes : MonoBehaviour
     public void Start()
     {
         finder = GameObject.FindGameObjectWithTag("Plop").GetComponent<FindAllGameObjects>();
+
+		if (!Directory.Exists("./PlopLogs"))
+			Directory.CreateDirectory("./PlopLogs/");
     }
 
     public void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.KeypadEnter))
+        if (!Input.GetKeyDown(KeyCode.P))
             return;
 
         StringBuilder text = new StringBuilder();
