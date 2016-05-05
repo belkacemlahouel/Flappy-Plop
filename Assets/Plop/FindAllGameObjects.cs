@@ -24,7 +24,7 @@ public class FindAllGameObjects : MonoBehaviour
         {
             if (go != gameObject && go.activeInHierarchy && go.GetComponent<MonoBehaviour>() != null)
             {
-                currentMonoBehaviorObjects.AddLast(go);
+				currentMonoBehaviorObjects.AddFirst(go);
                 ++number;
             }
         }
