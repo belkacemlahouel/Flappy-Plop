@@ -10,7 +10,7 @@ public class Menu : Editor {
 	private float deltaTime = 0f;
 	private Finder finder = null;
 	private Vector2 scrollPos = Vector2.zero;
-	private Dictionary<GameObject, bool> cases = null;
+	private Dictionary<string, bool> cases = null;
 
 	/// <summary>
 	/// When editor (in inspector) is enabled.
@@ -29,13 +29,13 @@ public class Menu : Editor {
 
 		if (finder == null) {
 			finder = (Finder) target;
-			cases = new Dictionary<GameObject, bool>();
+			cases = new Dictionary<string, bool>();
 		}
 
 		if (finder != null) {
 			foreach (GameObject go in finder.getAllObjects()) {
-				if (!cases.ContainsKey(go)) {
-					cases.Add(go, false);
+				if (!cases.ContainsKey(go.name)) {
+					cases.Add(go.name, false);
 				}
 			}
 		}
@@ -47,12 +47,12 @@ public class Menu : Editor {
 		EditorGUILayout.LabelField("Selection", EditorStyles.boldLabel);
 		scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
 		//keys to iterate over: cannot modify dictionary while iterating over it
-		GameObject[] keys = new GameObject[cases.Keys.Count];
+		string[] keys = new string[cases.Keys.Count];
 		cases.Keys.CopyTo(keys, 0);
-		foreach (GameObject go in keys) {
-			cases[go] = EditorGUILayout.Toggle(go.ToString(), cases[go]);
+		foreach (string go_name in keys) {
+			cases[go_name] = EditorGUILayout.Toggle(go_name, cases[go_name]);
 			//finder's selection update
-			finder.updateSelection(go, cases[go]);
+			finder.updateSelection(go_name, cases[go_name]);
 		}
 		EditorGUILayout.EndScrollView();
 	}

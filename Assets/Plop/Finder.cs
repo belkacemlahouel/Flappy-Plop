@@ -95,7 +95,7 @@ public class Finder : MonoBehaviour {
 	/// </summary>
 	/// <param name="_go">Game object to (un) selected.</param>
 	/// <param name="_selected">parameter describing whether we select this object or not</param>
-	public void updateSelection(GameObject _go, bool _selected) {
+	private void updateSelection(GameObject _go, bool _selected) {
 		if (_selected) {
 			if (nonSelection.Contains(_go))
 				nonSelection.Remove(_go);
@@ -108,6 +108,28 @@ public class Finder : MonoBehaviour {
 
 			if (!nonSelection.Contains(_go))
 				nonSelection.AddFirst(_go);
+		}
+	}
+
+	public void updateSelection(string _go_name, bool _selected) {
+		LinkedList<GameObject> chosen = new LinkedList<GameObject>();
+
+		if (_selected) {
+			foreach (GameObject go in nonSelection) {
+				if (go.name.Equals(_go_name)) {
+					chosen.AddFirst(go);
+				}
+			}
+		} else {
+			foreach (GameObject go in selection) {
+				if (go.name.Equals(_go_name)) {
+					chosen.AddFirst(go);
+				}
+			}
+		}
+
+		foreach (GameObject go in chosen) {
+			updateSelection(go, _selected);
 		}
 	}
 }
