@@ -100,7 +100,7 @@ public class ReflectionObject {
 	public override string ToString() {
 		if (depthLevel > Finder.DEPTH_OF_SEARCH) return "";
 
-		//recursive algorithm to print ereflection objects tree
+		//recursive algorithm to print reflection objects tree
 		StringBuilder builder = new StringBuilder();
 		for (int i = 0; i < depthLevel; ++i) {
 			builder.Append("\t");

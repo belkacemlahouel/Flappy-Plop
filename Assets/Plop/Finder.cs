@@ -60,7 +60,8 @@ public class Finder : MonoBehaviour {
 		nonSelection = tmpNonSelection;*/
 
 		foreach (GameObject go in selection) {
-			reflector.addGameObject(go, go.ToString());
+			if (go != null)
+				reflector.addGameObject(go, go.ToString());
 		}
 
 		(new Logger(selection, reflector)).start();
